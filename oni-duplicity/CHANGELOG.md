@@ -1,3 +1,9 @@
+## 3.19.1 (Duplicite 2)
+
+- Updated for latest Oxygen Not Included version (U57-700386)
+- Renamed to "Duplicite 2"
+- Added acknowledgments to original Duplicity project
+
 ## 3.19.0
 
 - Hack out nonfunctional editors that no longer apply to save version 4.31

@@ -32,6 +32,16 @@ const styles = (theme: Theme) =>
       flexDirection: "column",
       alignItems: "center",
     },
+    acknowledgments: {
+      marginTop: theme.spacing(4),
+      padding: theme.spacing(2),
+      backgroundColor: theme.palette.background.paper,
+      borderRadius: theme.shape.borderRadius,
+      border: `1px solid ${theme.palette.divider}`,
+    },
+    acknowledgmentsText: {
+      marginTop: theme.spacing(1),
+    },
   });
 
 const SaveFilePaths: Record<OSType, string | null> = {
@@ -66,6 +76,31 @@ const NoSave: React.FC<Props> = ({ classes, t }) => (
         Have no save file? Want to preview the editor?
       </Typography>
       <LoadExampleButton /> */}
+      <div className={classes.acknowledgments}>
+        <Typography variant="h6">Acknowledgments</Typography>
+        <Typography variant="body2" className={classes.acknowledgmentsText}>
+          We would like to express our gratitude to{" "}
+          <a
+            href="https://github.com/RoboPhred"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            RoboPhred
+          </a>{" "}
+          and all the contributors who created and open-sourced the original{" "}
+          <a
+            href="https://robophred.github.io/oni-duplicity/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Duplicity
+          </a>{" "}
+          project. This project would not have been possible without their
+          excellent work and dedication to the Oxygen Not Included community.
+          Thank you for making the source code available and allowing others
+          to build upon your foundation.
+        </Typography>
+      </div>
     </div>
   </PageContainer>
 );
