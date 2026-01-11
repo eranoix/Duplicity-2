@@ -54,6 +54,11 @@ module.exports = {
   resolve: {
     // Add '.ts' and '.tsx' as resolvable extensions.
     extensions: [".ts", ".tsx", ".js", ".json"],
+    modules: [
+      PATHS.nodeModules,
+      path.resolve(root, "../node_modules"),
+      "node_modules"
+    ],
     alias: {
       "@": PATHS.appSrc,
       "@changelog": PATHS.changelog,
