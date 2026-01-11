@@ -8,9 +8,7 @@ Duplicity é um editor de saves baseado em web para o jogo Oxygen Not Included. 
 
 ## 🌐 Acesso Online
 
-O editor está disponível em: **https://SEU_USUARIO.github.io/Duplicity-2/**
-
-> **Nota:** Substitua `SEU_USUARIO` pelo seu nome de usuário do GitHub após configurar o GitHub Pages.
+O editor está disponível em: **https://eranoix.github.io/Duplicity-2/**
 
 ## 🚀 Como Publicar no GitHub Pages
 
@@ -24,7 +22,7 @@ O editor está disponível em: **https://SEU_USUARIO.github.io/Duplicity-2/**
 
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/SEU_USUARIO/Duplicity-2.git
+   git clone https://github.com/eranoix/Duplicity-2.git
    cd Duplicity-2
    ```
 
@@ -36,7 +34,7 @@ O editor está disponível em: **https://SEU_USUARIO.github.io/Duplicity-2/**
 
 3. **Atualize o script de deploy no `package.json`:**
    
-   Abra `oni-duplicity/package.json` e substitua `YOUR_USERNAME` pelo seu usuário do GitHub no script `deploy`.
+   O `package.json` já está configurado com o usuário correto.
 
 4. **Escolha o método de deploy:**
 
@@ -64,7 +62,7 @@ O editor está disponível em: **https://SEU_USUARIO.github.io/Duplicity-2/**
 6. **Acesse o editor:**
    
    Após alguns minutos, o editor estará disponível em:
-   `https://SEU_USUARIO.github.io/Duplicity-2/`
+   `https://eranoix.github.io/Duplicity-2/`
 
 ### 🔄 Deploy Automático (GitHub Actions)
 
