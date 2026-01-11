@@ -1,0 +1,60 @@
+================================================================================
+  CONFIGURAÇÃO RÁPIDA DO GITHUB PAGES - DUPLICITY-2
+================================================================================
+
+⚠️ IMPORTANTE: Esta configuração precisa ser feita MANUALMENTE na interface
+   web do GitHub, pois não pode ser feita via linha de comando.
+
+================================================================================
+  PASSO 1: ACESSAR AS CONFIGURAÇÕES
+================================================================================
+
+1. Abra seu navegador e acesse:
+   https://github.com/eranoix/Duplicity-2/settings/pages
+
+   (ou vá em: Repositório > Settings (ícone de engrenagem) > Pages no menu lateral)
+
+================================================================================
+  PASSO 2: CONFIGURAR A FONTE
+================================================================================
+
+2. Na seção "Source" (Fonte), você verá um dropdown.
+
+3. Selecione: "GitHub Actions"
+
+4. Clique em "Save" (Salvar)
+
+================================================================================
+  PASSO 3: VERIFICAR O WORKFLOW
+================================================================================
+
+5. Vá para a aba "Actions" do seu repositório:
+   https://github.com/eranoix/Duplicity-2/actions
+
+6. Você deve ver o workflow "Build and Deploy to GitHub Pages" rodando ou
+   pode aparecer como "queued" (na fila).
+
+7. Aguarde alguns minutos até que o workflow complete com sucesso (ícone verde).
+
+================================================================================
+  PASSO 4: ACESSAR SEU SITE
+================================================================================
+
+8. Após o workflow completar, seu editor estará disponível em:
+
+   https://eranoix.github.io/Duplicity-2/
+
+================================================================================
+  RESOLUÇÃO DE PROBLEMAS
+================================================================================
+
+Se o workflow não aparecer:
+- Verifique se você está na branch "main"
+- Tente fazer um pequeno commit para disparar o workflow
+
+Se o GitHub Pages não estiver habilitado:
+- Verifique se o repositório é público (GitHub Pages gratuito só funciona
+  em repositórios públicos)
+- Ou faça upgrade para GitHub Pro se quiser usar Pages em repositórios privados
+
+================================================================================

@@ -39,7 +39,7 @@ const Sidebar: React.FC<Props> = ({ className, classes }) => (
   <div className={className}>
     <div className={classes.toolbar}>
       <Typography variant="h6" color="textSecondary">
-        Duplicite 2
+        Duplicity 2
       </Typography>
       <GithubButton className={classes.ghButton} />
     </div>

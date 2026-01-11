@@ -1,6 +1,6 @@
 {
   "name": "oni-duplicity",
-  "friendlyName": "Duplicite 2",
+  "friendlyName": "Duplicity 2",
   "version": "3.18.1",
   "description": "A web-based Oxygen Not Included save file editor.",
   "main": "lib/index.js",

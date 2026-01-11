@@ -1,4 +1,4 @@
-# Duplicite 2
+# Duplicity 2
 
 We would like to express our gratitude to [RoboPhred](https://github.com/RoboPhred) and all the contributors who created and open-sourced the original [Duplicity](https://robophred.github.io/oni-duplicity/) project. This project would not have been possible without their excellent work and dedication to the Oxygen Not Included community. Thank you for making the source code available and allowing others to build upon your foundation.
 

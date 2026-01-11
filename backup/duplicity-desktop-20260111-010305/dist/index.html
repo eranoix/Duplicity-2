@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <title>Duplicity - Oxygen Not Included save file editor</title>
+    <script>
+      // Ensure TextDecoder/TextEncoder are available globally before app loads
+      (function() {
+        if (typeof globalThis !== 'undefined' && !globalThis.TextDecoder) {
+          globalThis.TextDecoder = class TextDecoder {
+            constructor(encoding = 'utf-8') {
+              this.encoding = encoding;
+            }
+            decode(input) {
+              if (input instanceof ArrayBuffer) input = new Uint8Array(input);
+              if (input instanceof Uint8Array) {
+                let str = '';
+                for (let i = 0; i < input.length; i++) {
+                  str += String.fromCharCode(input[i]);
+                }
+                try {
+                  return decodeURIComponent(escape(str));
+                } catch(e) {
+                  return str;
+                }
+              }
+              return String(input);
+            }
+          };
+        }
+        if (typeof globalThis !== 'undefined' && !globalThis.TextEncoder) {
+          globalThis.TextEncoder = class TextEncoder {
+            constructor() {
+              this.encoding = 'utf-8';
+            }
+            encode(input) {
+              const str = String(input);
+              const bytes = new Uint8Array(str.length);
+              for (let i = 0; i < str.length; i++) {
+                bytes[i] = str.charCodeAt(i);
+              }
+              return bytes;
+            }
+          };
+        }
+        if (typeof window !== 'undefined') {
+          if (!window.TextDecoder) window.TextDecoder = globalThis.TextDecoder;
+          if (!window.TextEncoder) window.TextEncoder = globalThis.TextEncoder;
+        }
+      })();
+    </script>
+  <link rel="manifest" href="/oni-duplicity/manifest.0735891dcec0f0cce5e826c1c2314c2a.json" /></head>
+
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+  <script type="text/javascript" src="/oni-duplicity/runtime~client.6d5fff5674394fd700df.bundle.js"></script><script type="text/javascript" src="/oni-duplicity/npm.@material-ui.6d5fff5674394fd700df.bundle.js"></script><script type="text/javascript" src="/oni-duplicity/npm.react-oni-duplicant.6d5fff5674394fd700df.bundle.js"></script><script type="text/javascript" src="/oni-duplicity/client.6d5fff5674394fd700df.bundle.js"></script></body>
+</html>
