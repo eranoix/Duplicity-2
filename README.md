@@ -131,3 +131,7 @@ Contribuições são bem-vindas! Sinta-se livre para abrir issues e pull request
 ## 📚 Referências
 
 Este projeto é baseado no projeto original [oni-duplicity](https://github.com/RoboPhred/oni-duplicity) de RoboPhred.
+
+## 🙏 Acknowledgments
+
+We would like to express our gratitude to [RoboPhred](https://github.com/RoboPhred) and all the contributors who created and open-sourced the original [Duplicity](https://robophred.github.io/oni-duplicity/) project. This project would not have been possible without their excellent work and dedication to the Oxygen Not Included community. Thank you for making the source code available and allowing others to build upon your foundation.

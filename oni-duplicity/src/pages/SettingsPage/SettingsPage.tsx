@@ -25,7 +25,7 @@ const styles = (theme: Theme) =>
 
 type Props = WithStyles<typeof styles>;
 
-const SettingsPage: React.FC<Props> = ({ classes }) => {
+const SettingsPage: React.FC<Props> = ({ classes, theme }) => {
   const { enabled, supported, setEnabled } = useOfflineModeSettings();
   const onOfflineChecked = React.useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -65,6 +65,31 @@ const SettingsPage: React.FC<Props> = ({ classes }) => {
         <div>
           <Typography variant="h5">Language</Typography>
           <Language />
+        </div>
+        <div style={{ marginTop: theme.spacing(4) }}>
+          <Typography variant="h5">Acknowledgments</Typography>
+          <Typography variant="body2" style={{ marginTop: theme.spacing(1) }}>
+            We would like to express our gratitude to{" "}
+            <a
+              href="https://github.com/RoboPhred"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              RoboPhred
+            </a>{" "}
+            and all the contributors who created and open-sourced the original{" "}
+            <a
+              href="https://robophred.github.io/oni-duplicity/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Duplicity
+            </a>{" "}
+            project. This project would not have been possible without their
+            excellent work and dedication to the Oxygen Not Included community.
+            Thank you for making the source code available and allowing others
+            to build upon your foundation.
+          </Typography>
         </div>
       </div>
     </PageContainer>
