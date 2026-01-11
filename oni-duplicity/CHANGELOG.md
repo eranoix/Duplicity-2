@@ -4,11 +4,6 @@
 - **Updated for latest Oxygen Not Included version (U57-700386)**
   - Changelog updated to reflect compatibility with latest game version
 
-- **GitHub Pages deployment configuration**
-  - Configured webpack publicPath for GitHub Pages deployment
-  - Set up GitHub Actions workflow for automated builds and deployments
-  - Updated deployment scripts in package.json
-
 ## 3.19.0
 
 - Hack out nonfunctional editors that no longer apply to save version 4.31
