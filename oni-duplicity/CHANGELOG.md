@@ -1,17 +1,5 @@
 ## 3.19.1 (Duplicite 2)
 
-- **Project renamed to "Duplicite 2"**
-  - Updated application name in package.json (friendlyName)
-  - Updated page title in index.ejs
-  - Updated sidebar display name
-  - Updated README.md title
-
-- **Added acknowledgments throughout the application**
-  - Added acknowledgments section in README.md (first line)
-  - Added acknowledgments section in Settings page
-  - Added acknowledgments section in Overview page (both NoSave and SaveOverview states)
-  - Credits to RoboPhred and all contributors of the original Duplicity project
-
 - **Updated for latest Oxygen Not Included version (U57-700386)**
   - Changelog updated to reflect compatibility with latest game version
 
