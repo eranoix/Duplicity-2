@@ -4,8 +4,6 @@ We would like to express our gratitude to [RoboPhred](https://github.com/RoboPhr
 
 ---
 
-Editor de saves offline para **Oxygen Not Included** (ONI), baseado em React e TypeScript.
-
 ## 📋 Sobre
 
 Duplicity é um editor de saves baseado em web para o jogo Oxygen Not Included. Esta versão foi configurada para funcionar online através do GitHub Pages, permitindo que qualquer pessoa acesse o editor diretamente pelo navegador sem necessidade de instalação.
