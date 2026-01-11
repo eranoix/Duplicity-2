@@ -1,5 +1,6 @@
 ## 3.19.1 (Duplicite 2)
 
+- Added support to Bionics
 - **Updated for latest Oxygen Not Included version (U57-700386)**
   - Changelog updated to reflect compatibility with latest game version
 
