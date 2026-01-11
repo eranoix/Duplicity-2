@@ -20,12 +20,18 @@ const styles = (theme: Theme) =>
   createStyles({
     root: {
       padding: theme.spacing()
+    },
+    acknowledgments: {
+      marginTop: theme.spacing(4)
+    },
+    acknowledgmentsText: {
+      marginTop: theme.spacing(1)
     }
   });
 
 type Props = WithStyles<typeof styles>;
 
-const SettingsPage: React.FC<Props> = ({ classes, theme }) => {
+const SettingsPage: React.FC<Props> = ({ classes }) => {
   const { enabled, supported, setEnabled } = useOfflineModeSettings();
   const onOfflineChecked = React.useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -66,9 +72,9 @@ const SettingsPage: React.FC<Props> = ({ classes, theme }) => {
           <Typography variant="h5">Language</Typography>
           <Language />
         </div>
-        <div style={{ marginTop: theme.spacing(4) }}>
+        <div className={classes.acknowledgments}>
           <Typography variant="h5">Acknowledgments</Typography>
-          <Typography variant="body2" style={{ marginTop: theme.spacing(1) }}>
+          <Typography variant="body2" className={classes.acknowledgmentsText}>
             We would like to express our gratitude to{" "}
             <a
               href="https://github.com/RoboPhred"
