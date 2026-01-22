@@ -80,7 +80,8 @@ module.exports = {
         enforce: "pre",
         test: /\.(jsx?|tsx?)$/,
         loader: "source-map-loader",
-        include: [/src\/.+\.tsx?/]
+        include: [/src\/.+\.tsx?/],
+        exclude: [/node_modules/, /oni-save-parser/]
       },
 
       {
