@@ -30,7 +30,7 @@ jobs:
           
       - name: Install dependencies
         working-directory: ./oni-duplicity
-        run: npm ci
+        run: npm install
         
       - name: Build
         working-directory: ./oni-duplicity
