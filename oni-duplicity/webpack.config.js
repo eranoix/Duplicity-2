@@ -31,6 +31,12 @@ module.exports = {
   mode: isDev ? "development" : "production",
 
   devtool: "source-map",
+  
+  // Ignore warnings from source-map-loader
+  ignoreWarnings: [
+    /Failed to parse source map/,
+    /Can't resolve .* in .*node_modules/
+  ],
 
   devServer: {
     contentBase: PATHS.appDist,
@@ -86,10 +92,12 @@ module.exports = {
               transpileOnly: true,
               compilerOptions: {
                 skipLibCheck: true
-              }
+              },
+              logLevel: "info"
             }
           }
-        ]
+        ],
+        exclude: /node_modules\/(?!oni-save-parser)/
       },
 
       {
